@@ -175,7 +175,14 @@ def _generate_session_label():
 
 
 class Connection(object):
+    """Connect to a database
+
+    Usage::
+
+      >>> conn=connect()
+    """
     def __init__(self, options=None):
+        #: param from server
         self.parameters = {}
         self.session_id = None
         self.backend_pid = None
@@ -246,6 +253,20 @@ class Connection(object):
     # dbapi methods
     #############################################
     def close(self):
+        """Constructs a :class:`PreparedRequest <PreparedRequest>` for
+        transmission and returns it. The :class:`PreparedRequest` has settings
+        merged from the :class:`Request <Request>` instance and those of the
+        :class:`Session`.
+
+        PEP 484 type annotations are supported. 
+        
+        Args:
+            request: :class:`Request` instance to prepare with this
+                session's settings.
+        Returns:
+            bool: requests.PreparedRequest
+
+        """
         try:
             self.write(messages.Terminate())
         finally:

@@ -10,7 +10,7 @@ Welcome to vertica-python-project-name's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   api/connection
 
 Indices and tables
 ==================
