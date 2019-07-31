@@ -28,6 +28,8 @@ before_install:
   - sleep 60
 install:
   - pip install tox
+  - pip install codecov
 script:
   - export VP_TEST_USER=dbadmin
   - tox
+  - codecov
