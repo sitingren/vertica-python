@@ -28,9 +28,6 @@ before_install:
   - sleep 60
 install:
   - pip install tox
-  - pip install coveralls codecov
 script:
   - export VP_TEST_USER=dbadmin
-  - tox
-  - coveralls
-  - codecov
+  - tox -- --with-coverage
