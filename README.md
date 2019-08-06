@@ -4,6 +4,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python Version](https://img.shields.io/pypi/pyversions/vertica-python.svg)](https://www.python.org/downloads/)
 [![Downloads](https://pepy.tech/badge/vertica-python/week)](https://pepy.tech/project/vertica-python)
+[![codecov](https://codecov.io/gh/vertica/vertica-python/branch/master/graph/badge.svg)](https://codecov.io/gh/vertica/vertica-python)
 
 vertica-python is a native Python adapter for the Vertica (http://www.vertica.com) database.
 
