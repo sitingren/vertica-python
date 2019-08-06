@@ -30,4 +30,4 @@ install:
   - pip install tox
 script:
   - export VP_TEST_USER=dbadmin
-  - tox -- --with-coverage
+  - tox
