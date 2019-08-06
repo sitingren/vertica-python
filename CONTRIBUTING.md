@@ -144,6 +144,9 @@ Then you can run the **tox** command from any place in the *vertica-python* sour
 
 The arguments after the `--` will be substituted everywhere where you specify `{posargs}` in your test *commands* of `tox.ini`.
 Run `$ nosetests --help` to see all arguments you can specify after the `--`.
+
+You may see "Error: Missing repository upload token" in the output, you can ignore it if you don't use [codecov](https://codecov.io/). Or editing `tox.ini` to disable coverage reports: replace `{[coverage]commands}` with `{[core]commands}`, and replace `{[coverage]deps}` with `{[core]deps}`.
+
 For more usages about [tox](https://tox.readthedocs.io), see the Python documentation.
 
 
